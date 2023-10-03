@@ -1,39 +1,4 @@
 @font-face {
-  font-family: "Plus-Jakarta-Sans-bold";
-  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2"), url("../fonts/PlusJakartaSans-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Plus-Jakarta-Sans-regular";
-  src: url("../PlusJakartaSans-Regular.woff2") format("woff2"), url("../PlusJakartaSans-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Plus-Jakarta-Sans-semibold";
-  src: url("../fonts/PlusJakartaSans-SemiBold.woff2") format("woff2"), url("../fonts/PlusJakartaSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Plus-Jakarta-Sans-medium";
-  src: url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2"), url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Plus-Jakarta-Sans-light";
-  src: url("../fonts/PlusJakartaSans-Light.woff2") format("woff2"), url("../fonts/PlusJakartaSans-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "helvetica-thin";
   src: url("../fonts/PragmaticaExtraLight-Reg.woff2") format("woff2"), url("../fonts/PragmaticaExtraLight-Reg.woff") format("woff");
   font-weight: 200;
@@ -51,55 +16,6 @@
   font-family: "helvetica-bold";
   src: url("../fonts/FreeSansBold.woff2") format("woff2"), url("../fonts/FreeSansBold.woff") format("woff");
   font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter-exlight";
-  src: url("../fonts/Inter-ExtraLight.woff2") format("woff2"), url("../fonts/Inter-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter-light";
-  src: url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter-black";
-  src: url("../fonts/Inter-Black.woff2") format("woff2"), url("../fonts/Inter-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter-medium";
-  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter-regular";
-  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter-bold";
-  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter-semibold";
-  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
-  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -156,6 +72,11 @@ ol {
 .main_wrapper {
   padding: 4.5rem 4rem;
 }
+@media (max-width: 767px) {
+  .main_wrapper {
+    padding: 4.5rem 2rem;
+  }
+}
 
 .gradient {
   display: inline-flex;
@@ -191,7 +112,8 @@ ol {
 
 .sub_heading {
   color: #D9D9D9;
-  font-family: "Plus-Jakarta-Sans-medium";
+  font-family: "helvetica-regular";
+  font-weight: 400;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -199,11 +121,17 @@ ol {
 
 .main_heading {
   font-size: 4.6rem;
-  font-family: "Plus-Jakarta-Sans-bold";
+  font-family: "helvetica-bold";
   line-height: 5.5rem;
   color: #060606;
   margin: 0;
   padding-top: 2rem;
+}
+@media (max-width: 767px) {
+  .main_heading {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
 }
 
 .card_logo_wrapper {
@@ -226,21 +154,29 @@ ol {
 .card_info h5 {
   font-size: 2.4rem;
   color: #1F2022;
-  font-family: "Plus-Jakarta-Sans-semibold";
+  font-family: "helvetica-regular";
+  font-weight: 400;
 }
 .card_info p {
   font-size: 1.8rem;
   width: 21.9rem;
+  font-family: "helvetica-thin";
 }
 
 header {
   background-color: #0E0A24;
   border-top-left-radius: 3.5rem;
   border-top-right-radius: 3.5rem;
-  font-family: "Plus-Jakarta-Sans-medium";
+  font-family: "helvetica-regular";
+  font-weight: 500;
 }
 header .header_wrapper {
   padding: 1.8rem 4.3rem;
+}
+@media (max-width: 1023px) {
+  header .header_wrapper .navbar-collapse {
+    margin-top: 3rem;
+  }
 }
 header .header_wrapper .navbar-nav {
   width: 100%;
@@ -277,9 +213,87 @@ header .header_wrapper .navbar-nav .nav-item.dropdown .nav-link::after {
 header .header_wrapper .side_img_wrapper {
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 10px;
+  color: white;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 3rem;
 }
-header .navbar-toggler {
-  background-color: white;
+@media (max-width: 1023px) {
+  header .header_wrapper .side_img_wrapper {
+    width: 100px;
+    margin-top: 2rem;
+  }
+}
+
+.footer {
+  margin-top: 11rem;
+  color: #515254;
+}
+.footer__top {
+  margin-bottom: 7.5rem;
+}
+.footer__bottom {
+  padding: 3rem 0 0 0;
+}
+.footer h6 {
+  color: #060606;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.footer p,
+.footer a,
+.footer input {
+  color: #515254;
+  font-size: 1.6rem;
+  line-height: 3.04rem;
+}
+.footer .brand_info .info {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin: 3rem 0;
+}
+.footer .contact_us span {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 0.5rem;
+}
+.footer .newsletter form {
+  margin: 3.5rem 0 3rem 0;
+}
+.footer .newsletter form .email_input {
+  background-color: rgba(14, 10, 36, 0.07);
+  border-radius: 11.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+.footer .newsletter form .email_input input {
+  border: 0 none;
+  width: calc(100% - 5.7rem);
+  background: transparent;
+}
+.footer .newsletter form .email_input a.gradient {
+  cursor: pointer;
+  height: 5.7rem;
+  width: 5.7rem;
+  border-radius: 2.5rem;
+}
+.footer .newsletter form .email_input a.gradient img {
+  transform: rotate(90deg);
+}
+.footer .newsletter .social_links li {
+  margin-right: 1.3rem;
+}
+.footer .external_links_wrap li:last-child {
+  margin-left: 3rem;
+}
+.footer .external_links_wrap li a {
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .banner_slider {
@@ -336,15 +350,34 @@ header .navbar-toggler {
   font-size: 6.8rem;
   padding: 2.5rem 0;
   line-height: 8.1rem;
-  width: 24.3rem;
+  width: 80%;
   text-align: center;
   margin: 0;
+}
+@media (max-width: 1023px) {
+  .banner_slider .banner-items .banner-item .item_wrapper .content_wrapper h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .banner_slider .banner-items .banner-item .item_wrapper .content_wrapper h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 580px) {
+  .banner_slider .banner-items .banner-item .item_wrapper .content_wrapper h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 .banner_slider .banner-items .banner-item .item_wrapper .content_wrapper .banner_description {
   font-family: "helvetica-thin";
   font-weight: 400;
   font-size: 1.8rem;
   width: 51.6rem;
+  width: 70%;
 }
 .banner_slider .banner-items .banner-item .item_wrapper .content_wrapper .banner_get_started {
   padding-top: 25px;
@@ -421,8 +454,25 @@ header .navbar-toggler {
   display: flex;
   justify-content: end;
 }
+@media (max-width: 767px) {
+  .about_us .about_us_wrapper .about_us_info {
+    justify-content: center;
+  }
+}
 .about_us .about_us_wrapper .about_us_info .about_us_info_wrap {
   width: 50rem;
+}
+@media (max-width: 767px) {
+  .about_us .about_us_wrapper .about_us_info .about_us_info_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 3rem;
+  }
 }
 .about_us .about_us_wrapper .about_us_info .about_us_info_wrap .about_us_desc {
   padding-top: 1rem;
@@ -431,13 +481,19 @@ header .navbar-toggler {
 }
 .about_us .about_us_wrapper .about_us_info .about_us_info_wrap .about_points_wrapper {
   padding: 1.7rem 0 2.5rem 0;
-  font-family: "Plus-Jakarta-Sans-medium";
+  font-family: "helvetica-regular";
+  font-weight: 500;
 }
 .about_us .about_us_wrapper .about_us_info .about_us_info_wrap .about_points_wrapper .about_points {
   display: flex;
   align-items: center;
   font-size: 1.8rem;
   padding-top: 0.8rem;
+}
+@media (max-width: 767px) {
+  .about_us .about_us_wrapper .about_us_info .about_us_info_wrap .about_points_wrapper .about_points {
+    justify-content: center;
+  }
 }
 .about_us .about_us_wrapper .about_us_info .about_us_info_wrap .about_points_wrapper .about_points::before {
   width: 1.3rem;
@@ -457,7 +513,13 @@ header .navbar-toggler {
   border-radius: 3.5rem;
   margin: 7.7rem 0;
 }
-.services .sub_heading, .services .main_heading {
+@media (max-width: 767px) {
+  .services {
+    padding: 6rem 4rem;
+  }
+}
+.services .sub_heading,
+.services .main_heading {
   color: white;
 }
 .services .services_wrapper {
@@ -467,6 +529,11 @@ header .navbar-toggler {
 }
 .services .services_wrapper .services_info .services_wrap {
   width: 45rem;
+}
+@media (max-width: 767px) {
+  .services .services_wrapper .services_info .services_wrap {
+    width: 100%;
+  }
 }
 .services .services_wrapper .services_info .services_wrap .services_desc {
   padding-top: 1rem;
@@ -481,6 +548,11 @@ header .navbar-toggler {
   height: 60.7rem;
   overflow: hidden;
 }
+@media (max-width: 1023px) {
+  .services .services_wrapper .services-items {
+    margin-top: 5rem;
+  }
+}
 .services .services_wrapper .services-items .insurence_card_wrapper {
   display: flex;
 }
@@ -490,6 +562,11 @@ header .navbar-toggler {
   height: 187px;
   max-width: 56.7rem;
   margin-top: 3.1rem;
+}
+@media (max-width: 1023px) {
+  .services .services_wrapper .services-items .services-item {
+    max-width: 100%;
+  }
 }
 .services .services_wrapper .services-items .services-item .insurence_card_wrapper {
   display: flex;
@@ -525,6 +602,11 @@ header .navbar-toggler {
 .loan_type .loan_heading_wrapper .main_heading {
   width: 40%;
 }
+@media (max-width: 1023px) {
+  .loan_type .loan_heading_wrapper .main_heading {
+    width: 100%;
+  }
+}
 .loan_type .loan-item .loan_card_wrapper {
   text-align: center;
   display: flex;
@@ -550,13 +632,18 @@ header .navbar-toggler {
   height: 3rem;
   z-index: 1;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   top: -40%;
 }
 .loan_type .slick-next {
   right: 2%;
+}
+@media (max-width: 767px) {
+  .loan_type .slick-next {
+    display: none !important;
+  }
 }
 .loan_type .slick-next:before {
   font-size: 2rem;
@@ -569,6 +656,21 @@ header .navbar-toggler {
 }
 .loan_type .slick-prev {
   left: 87%;
+}
+@media (max-width: 1023px) {
+  .loan_type .slick-prev {
+    left: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .loan_type .slick-prev {
+    display: none !important;
+  }
+}
+@media (max-width: 900px) {
+  .loan_type .slick-prev {
+    left: 80%;
+  }
 }
 .loan_type .slick-prev:before {
   font-size: 2rem;
@@ -605,19 +707,29 @@ header .navbar-toggler {
   border-radius: 4rem;
   color: white;
   margin-top: 10.5rem;
-  font-family: "Inter-light";
+}
+@media (max-width: 767px) {
+  .finance_calculator {
+    padding: 5rem 4rem;
+  }
 }
 .finance_calculator h4 {
   font-size: 3.2rem;
-  font-family: "Inter-medium";
+  font-family: "helvetica-regular";
+  font-weight: 500;
   padding-bottom: 5rem;
 }
 .finance_calculator form {
   max-width: 48.2rem;
 }
+@media (max-width: 1280px) {
+  .finance_calculator form {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
 .finance_calculator form .form-label {
   font-size: 1.8rem;
-  font-family: "Inter-light";
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
@@ -639,6 +751,11 @@ header .navbar-toggler {
 }
 .finance_calculator form .form-item-wrapper input.form-control::placeholder {
   color: white;
+}
+@media (max-width: 1280px) {
+  .finance_calculator form .form-item-wrapper .select2-container {
+    width: 100% !important;
+  }
 }
 .finance_calculator form select {
   font-size: 1.8rem;
@@ -686,7 +803,8 @@ header .navbar-toggler {
 }
 .finance_calculator form .cart_wrapper .cart_info_wrap .total_amount .amount {
   font-size: 3.2rem;
-  font-family: "Inter-semibold";
+  font-family: "helvetica-regular";
+  font-weight: 500;
   padding-right: 0.8rem;
 }
 .finance_calculator .graph_wrapper {
@@ -696,6 +814,11 @@ header .navbar-toggler {
 .finance_calculator .graph_wrapper img {
   height: 100%;
   width: 100%;
+}
+@media (max-width: 1023px) {
+  .finance_calculator .graph_wrapper img {
+    margin-top: 3rem;
+  }
 }
 .finance_calculator .graph_wrapper .graph_section {
   background-color: #EEF3F8;
@@ -782,8 +905,19 @@ header .navbar-toggler {
   margin-top: 3rem;
   display: flex;
 }
+@media (max-width: 1023px) {
+  .working_steps .steps_wrapper .steps_items {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
 .working_steps .steps_wrapper .steps_items .step-item_wrapper {
   width: 33.3333333333%;
+}
+@media (max-width: 1023px) {
+  .working_steps .steps_wrapper .steps_items .step-item_wrapper {
+    width: 100%;
+  }
 }
 .working_steps .steps_wrapper .steps_items .step-item {
   color: white;
@@ -804,6 +938,11 @@ header .navbar-toggler {
   background-color: #FB5141;
   left: 43%;
 }
+@media (max-width: 1023px) {
+  .working_steps .steps_wrapper .steps_items .step-item .step_count.item2 .rounded-circle {
+    left: 47%;
+  }
+}
 .working_steps .steps_wrapper .steps_items .step-item .step_count.item2::before {
   content: "";
   border-bottom: 0.1rem dotted #7C7E82;
@@ -817,20 +956,40 @@ header .navbar-toggler {
   background-color: #089EFF;
   left: 43%;
 }
+@media (max-width: 1023px) {
+  .working_steps .steps_wrapper .steps_items .step-item .step_count.item1 .rounded-circle {
+    left: 47%;
+  }
+}
 .working_steps .steps_wrapper .steps_items .step-item .step_count.item1::before {
   content: "";
   border-bottom: 0.1rem dotted #7C7E82;
   width: 50%;
+}
+@media (max-width: 1023px) {
+  .working_steps .steps_wrapper .steps_items .step-item .step_count.item1::before {
+    width: 100%;
+  }
 }
 .working_steps .steps_wrapper .steps_items .step-item .step_count.item3 .rounded-circle {
   position: absolute;
   background-color: #674AD9;
   left: 43%;
 }
+@media (max-width: 1023px) {
+  .working_steps .steps_wrapper .steps_items .step-item .step_count.item3 .rounded-circle {
+    left: 47%;
+  }
+}
 .working_steps .steps_wrapper .steps_items .step-item .step_count.item3::before {
   content: "";
   border-bottom: 0.1rem dotted #7C7E82;
   width: 50%;
+}
+@media (max-width: 1023px) {
+  .working_steps .steps_wrapper .steps_items .step-item .step_count.item3::before {
+    width: 100%;
+  }
 }
 .working_steps .steps_wrapper .steps_items .step-item .step_info_wrapper {
   margin-top: 4rem;
@@ -857,6 +1016,11 @@ header .navbar-toggler {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .know_more.about_us .about_us_wrapper .about_us_info {
+    order: 2;
+  }
+}
 .know_more.about_us .about_us_wrapper .about_us_info .about_us_info_wrap {
   width: 90%;
 }
@@ -867,7 +1031,7 @@ header .navbar-toggler {
 }
 
 .faqs {
-  margin: 19.9rem 0 10rem 0;
+  margin: 10rem 0;
 }
 .faqs_accordion {
   margin-top: 5rem;
@@ -878,7 +1042,7 @@ header .navbar-toggler {
 .faqs_accordion .accordion-button {
   padding: 3.5rem;
   color: #6E7279;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 .faqs_accordion .accordion-button::after {
   width: 46px;
@@ -890,6 +1054,8 @@ header .navbar-toggler {
   border: 1px solid rgba(0, 0, 0, 0.0784313725);
 }
 .faqs_accordion .accordion-button:not(.collapsed) {
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
   background-color: rgb(238, 238, 238);
   box-shadow: 0 0 0 transparent;
 }
@@ -900,12 +1066,18 @@ header .navbar-toggler {
 }
 .faqs_accordion .accordion-body {
   padding: 0;
+  font-family: "helvetica-regular";
+  font-weight: 400;
+  color: #7C7E82;
+  font-size: 2rem;
 }
 .faqs_accordion .accordion-collapse {
   padding: 0 10rem 3.5rem 3.5rem;
 }
 .faqs_accordion .accordion-collapse.show {
   background-color: rgb(238, 238, 238);
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
 }
 .faqs_wrapper {
   width: 100%;
@@ -925,7 +1097,7 @@ header .navbar-toggler {
 }
 @media (max-width: 1023px) {
   .app_download {
-    padding: 6rem;
+    padding: 6rem 2rem;
     background-size: 100% 100%;
     height: auto;
   }
@@ -982,77 +1154,13 @@ header .navbar-toggler {
 }
 .app_download .content__right {
   width: 40%;
+  overflow: auto;
 }
 @media (max-width: 767px) {
   .app_download .content__right {
     width: 100%;
+    display: none;
   }
-}
-
-.footer {
-  margin-top: 11rem;
-  color: #515254;
-}
-.footer__top {
-  margin-bottom: 7.5rem;
-}
-.footer__bottom {
-  padding: 3rem 0 0 0;
-}
-.footer h6 {
-  color: #060606;
-  font-size: 2rem;
-  line-height: 2.4rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-}
-.footer p, .footer a, .footer input {
-  color: #515254;
-  font-size: 1.6rem;
-  line-height: 3.04rem;
-}
-.footer .brand_info .info {
-  font-size: 2rem;
-  line-height: 3.2rem;
-  margin: 3rem 0;
-}
-.footer .contact_us span {
-  height: 4rem;
-  width: 4rem;
-  margin-right: 0.5rem;
-}
-.footer .newsletter form {
-  margin: 3.5rem 0 3rem 0;
-}
-.footer .newsletter form .email_input {
-  background-color: rgba(14, 10, 36, 0.07);
-  border-radius: 11.5rem;
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
-}
-.footer .newsletter form .email_input input {
-  border: 0 none;
-  width: calc(100% - 5.7rem);
-  background: transparent;
-}
-.footer .newsletter form .email_input span {
-  height: 5.7rem;
-  width: 5.7rem;
-  border-radius: 2.5rem;
-}
-.footer .newsletter form .email_input span img {
-  transform: rotate(90deg);
-}
-.footer .newsletter .social_links li {
-  margin-right: 1.3rem;
-}
-.footer .external_links_wrap li:last-child {
-  margin-left: 3rem;
-}
-.footer .external_links_wrap li a {
-  font-size: 1.3rem;
-  line-height: 2rem;
 }
 
 .eligibility {
@@ -1060,6 +1168,11 @@ header .navbar-toggler {
   border-radius: 4rem;
   margin-top: 10rem;
   padding: 10rem 9rem;
+}
+@media (max-width: 1023px) {
+  .eligibility {
+    padding: 6rem 4rem;
+  }
 }
 .eligibility .sub_heading {
   color: rgba(255, 255, 255, 0.2);
@@ -1074,8 +1187,9 @@ header .navbar-toggler {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .eligibility .info_img {
+    margin-top: 5rem;
     width: 100%;
   }
 }
@@ -1091,7 +1205,7 @@ header .navbar-toggler {
   }
 }
 .eligibility_list {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 .eligibility_list li {
   color: white;
@@ -1116,30 +1230,9 @@ header .navbar-toggler {
   color: rgba(255, 255, 255, 0.2);
 }
 
-@media only screen and (max-width: 1200px) {
-  .loan_type .slick-prev {
-    display: none !important;
-  }
-  .loan_type .slick-next {
-    display: none !important;
-  }
-  .select2-container {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 994px) {
-  .finance_calculator .graph_wrapper img {
-    margin-top: 3rem;
-  }
-  .loan_type .loan_heading_wrapper .main_heading {
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 768px) {
-  .select2-container {
-    width: 100% !important;
-  }
-  .finance_calculator .graph_wrapper img {
-    margin-top: 3rem;
+  .loan-item.slick-slide.slick-current.slick-active .loan_card_wrapper {
+    background-color: rgba(6, 6, 6, 0.03);
+    border-radius: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */

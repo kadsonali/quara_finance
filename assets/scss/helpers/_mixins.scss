@@ -25,6 +25,7 @@ $breakpoints: (
   'desktop':(min-width: 1024px),
   'large':(min-width: 1200px),
   'smallDesktop':(max-width: 1280px),
+  'max-900':(max-width: 900px),
   'medDesktop':(min-width:1400px),
   'xtralarge':(min-width: 1632px)
 );

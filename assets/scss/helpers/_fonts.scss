@@ -1,49 +1,4 @@
 @font-face {
-    font-family: 'Plus-Jakarta-Sans-bold';
-    src: url('../fonts/PlusJakartaSans-Bold.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus-Jakarta-Sans-regular';
-    src: url('../PlusJakartaSans-Regular.woff2') format('woff2'),
-        url('../PlusJakartaSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus-Jakarta-Sans-semibold';
-    src: url('../fonts/PlusJakartaSans-SemiBold.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus-Jakarta-Sans-medium';
-    src: url('../fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus-Jakarta-Sans-light';
-    src: url('../fonts/PlusJakartaSans-Light.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'helvetica-thin';
     src: url('../fonts/PragmaticaExtraLight-Reg.woff2') format('woff2'),
         url('../fonts/PragmaticaExtraLight-Reg.woff') format('woff');
@@ -66,69 +21,6 @@
     src: url('../fonts/FreeSansBold.woff2') format('woff2'),
         url('../fonts/FreeSansBold.woff') format('woff');
     font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-exlight';
-    src: url('../fonts/Inter-ExtraLight.woff2') format('woff2'),
-        url('../fonts/Inter-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-light';
-    src: url('../fonts/Inter-Light.woff2') format('woff2'),
-        url('../fonts/Inter-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-black';
-    src: url('../fonts/Inter-Black.woff2') format('woff2'),
-        url('../fonts/Inter-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-medium';
-    src: url('../fonts/Inter-Medium.woff2') format('woff2'),
-        url('../fonts/Inter-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-regular';
-    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
-        url('../fonts/Inter-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-bold';
-    src: url('../fonts/Inter-Bold.woff2') format('woff2'),
-        url('../fonts/Inter-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-semibold';
-    src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
-        url('../fonts/Inter-SemiBold.woff') format('woff');
-    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
