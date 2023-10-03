@@ -1,0 +1,56 @@
+header {
+    background-color: $primary;
+    border-top-left-radius: 3.5rem;
+    border-top-right-radius: 3.5rem;
+    font-family: $jakarta-medium;
+    .header_wrapper {
+        padding: 1.8rem 4.3rem;
+        .navbar-nav {
+            width: 100%;
+            gap: 3rem;
+            justify-content: center;
+            display: flex;
+           
+            .nav-link{
+                padding: 0;
+            }
+
+            .nav-item {
+                font-size: 1.5rem;
+           
+                a{
+                    color: $white;
+                    text-transform: uppercase;
+                }
+                .dropdown-item{
+                    color: $primary;
+                }
+                &.dropdown
+                {
+                    .nav-link{
+                        display: flex;
+                        align-items: center;
+                        &::after{
+                            content: '';
+                            border: 0;
+                            background: url(../images/down-arrow.svg);
+                            background-repeat: no-repeat;
+                            height: 1rem;
+                            margin-left:0.9rem ;
+                            width: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .side_img_wrapper {
+            border: 1px solid $light-gray;
+            padding: 10px;
+        }
+    
+    }
+    .navbar-toggler{
+        background-color: white;
+    }
+}

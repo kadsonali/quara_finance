@@ -1,0 +1,41 @@
+.sub_heading{
+    color: $gray-shade;
+    font-family: $jakarta-medium;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.main_heading{
+    font-size: 4.6rem;
+    font-family: $jakarta-bold;
+    line-height: 5.5rem;
+    color: $black-shade;
+    margin: 0;
+    padding-top: 2rem;
+}
+.card_logo_wrapper {
+    height: 8.4rem;
+    width: 8.4rem;
+    background-color: $light-blue2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_logo_item2{
+    background-color: $orange-shade1;
+}
+.card_logo_item3{
+    background-color:  $green-shade1;
+} 
+.card_info {
+    h5 {
+        font-size: 2.4rem;
+        color: $black-shade2;
+        font-family: $jakarta-semibold;
+    }
+
+    p {
+        font-size: 1.8rem;
+        width: 21.9rem;
+    }
+}
