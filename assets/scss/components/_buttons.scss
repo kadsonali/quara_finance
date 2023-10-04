@@ -32,3 +32,12 @@
     }
 
 }
+.btn_dark{
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    &:hover{
+        color:$white;
+        border: 0.1rem solid $white;
+    }
+}

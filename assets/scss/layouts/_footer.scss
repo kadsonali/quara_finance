@@ -75,6 +75,18 @@
         .social_links {
             li {
                 margin-right: 1.3rem;
+                a{
+                    img{
+                        border:0.2rem solid $white;
+                        transition: all 0.3s ease-in-out;
+                        border-radius: 50%;
+                        padding: 0.1rem;
+                        &:hover{
+                            // border: 2px solid;
+                            border:0.2rem solid rgba(151, 119, 119, 0.44)
+                        }
+                    }
+                }
             }
         }
     }
@@ -89,6 +101,18 @@
                 font-size: 1.3rem;
                 line-height: 2rem;
 
+            }
+        }
+    }
+    .use_cases,.products{
+        li{
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                margin-left: 0.7rem;
+                font-weight: 500;
+                a{
+                    color: #070b12;
+                }
             }
         }
     }

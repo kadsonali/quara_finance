@@ -119,6 +119,16 @@ ol {
   display: block;
 }
 
+.btn_dark {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.btn_dark:hover {
+  color: white;
+  border: 0.1rem solid white;
+}
+
 .sub_heading {
   color: #D9D9D9;
   font-family: "helvetica-regular";
@@ -179,6 +189,10 @@ ol {
   .card_info p {
     width: 100%;
   }
+}
+
+.dropdown-item {
+  font-size: 1.4rem;
 }
 
 header {
@@ -306,12 +320,31 @@ header .header_wrapper .side_img_wrapper {
 .footer .newsletter .social_links li {
   margin-right: 1.3rem;
 }
+.footer .newsletter .social_links li a img {
+  border: 0.2rem solid white;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  padding: 0.1rem;
+}
+.footer .newsletter .social_links li a img:hover {
+  border: 0.2rem solid rgba(151, 119, 119, 0.44);
+}
 .footer .external_links_wrap li:last-child {
   margin-left: 3rem;
 }
 .footer .external_links_wrap li a {
   font-size: 1.3rem;
   line-height: 2rem;
+}
+.footer .use_cases li, .footer .products li {
+  transition: all 0.5s ease-in-out;
+}
+.footer .use_cases li:hover, .footer .products li:hover {
+  margin-left: 0.7rem;
+  font-weight: 500;
+}
+.footer .use_cases li:hover a, .footer .products li:hover a {
+  color: #070b12;
 }
 
 .banner_slider {
