@@ -111,14 +111,19 @@
             height: 30px;
             z-index: 1;
             border: 1px solid $gray-border;
-            display: flex;
+            display: flex !important;
             justify-content: center;
             align-items: center;
+
+            @include breakpoint('mobile') {
+                // left: 75%;
+                display: none !important;
+            }
         }
 
         .slick-next {
             right: 3.8rem;
-           
+
 
             &:before {
                 background: url(../images/right-arrow.svg);
@@ -127,7 +132,7 @@
                 background-color: transparent;
                 color: transparent;
             }
-            
+
         }
 
         .slick-prev {
@@ -218,28 +223,46 @@
                     font-family: $helvetica-regular;
                     font-weight: 500;
 
-                    .about_points {
+                    @include breakpoint('smallmobile') {
+                        // display: contents !important;
                         display: flex;
-                        align-items: center;
-                        font-size: 1.8rem;
-                        padding-top: 0.8rem;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
 
-                        @include breakpoint('mobile') {
-                            justify-content: center;
-                        }
+                    .about_wrap {
 
-                        &::before {
-                            width: 1.3rem;
-                            height: 2rem;
-                            content: "";
-                            background: url(../images/right.svg);
-                            display: block;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            margin-right: 1rem;
+                        .about_points {
+                            display: flex;
+                            align-items: center;
+                            font-size: 1.8rem;
+                            padding-top: 0.8rem;
+
+                            @include breakpoint('mobile') {
+                                // justify-content: center;
+                                // min-width: 300px;
+                                margin-left: 70px;
+                            }
+
+                            @include breakpoint('smallmobile') {
+                                margin: 8px 0 8px 40px;
+                                //  justify-content: center;
+                            }
+
+                            &::before {
+                                width: 1.3rem;
+                                height: 2rem;
+                                content: "";
+                                background: url(../images/right.svg);
+                                display: block;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                margin-right: 1rem;
+                            }
                         }
                     }
                 }
+
 
             }
         }
@@ -309,7 +332,7 @@
             .services-item {
                 border-radius: 0.6rem;
                 padding: 5rem 4.8rem;
-                height: 187px;
+                // height: 187px;
                 max-width: 56.7rem;
                 margin-top: 3.1rem;
 
@@ -357,13 +380,14 @@
 }
 
 .loan_type {
-    margin: 6.7rem 5.5rem 4.7rem 2rem;
+    margin: 6.7rem 2rem 4.7rem 2rem;
 
     .loan_heading_wrapper {
         padding-bottom: 5rem;
 
         .main_heading {
             width: 40%;
+
             @include breakpoint('iPad') {
                 width: 100%;
             }
@@ -498,7 +522,7 @@
         background-color: $card-bg;
         border-radius: 4rem;
     }
-    
+
 }
 
 .finance_calculator {
@@ -616,11 +640,22 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include breakpoint('xtrasmallmobile') {
+                flex-direction: column;
+            }
+            .btn.btn-arrow{
+                @include breakpoint('xtrasmallmobile') {
+                    margin-top: 1rem;
+                }
+            }
 
             .cart_info_wrap {
+                
+              
                 .amount_topay {
                     font-size: 1.6rem;
                 }
+
 
                 .total_amount {
                     padding-top: 1.5rem;
@@ -640,6 +675,7 @@
         img {
             height: 100%;
             width: 100%;
+
             @include breakpoint('iPad') {
                 margin-top: 3rem;
             }
@@ -787,7 +823,12 @@
                     position: relative;
                     display: flex;
                     align-items: center;
+
                     flex-grow: 1;
+
+                    @include breakpoint('iPad') {
+                        justify-content: center;
+                    }
 
                     .rounded-circle {
                         display: inline-block;
@@ -801,9 +842,8 @@
                             position: absolute;
                             background-color: $orange;
                             left: 43%;
-
                             @include breakpoint('iPad') {
-                                left: 47%;
+                                left: auto;
                             }
                         }
 
@@ -818,13 +858,17 @@
                     &.item1 {
                         justify-content: flex-end;
 
+                        @include breakpoint('iPad') {
+                            justify-content: center;
+                        }
+
                         .rounded-circle {
                             position: absolute;
                             background-color: $sky-blue;
                             left: 43%;
 
                             @include breakpoint('iPad') {
-                                left: 47%;
+                                left: auto;
                             }
                         }
 
@@ -845,9 +889,8 @@
                             position: absolute;
                             background-color: $purple;
                             left: 43%;
-
                             @include breakpoint('iPad') {
-                                left: 47%;
+                                left: auto;
                             }
                         }
 
@@ -1008,6 +1051,7 @@
         padding: 6rem 2rem;
         background-size: 100% 100%;
         height: auto;
+        margin: 0 -2rem;
     }
 
     .main_heading {
@@ -1063,6 +1107,9 @@
 
                 a {
                     margin-right: 2rem;
+                }
+                @include breakpoint('iPad') {
+                    margin-bottom: 10rem;
                 }
 
             }

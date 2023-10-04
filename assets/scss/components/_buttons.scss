@@ -5,23 +5,30 @@
     padding: 1.6rem 3.5rem;
     border-radius: 30px;
     font-weight: 400;
-    transition:  all 0.5s ease-in-out;
+    transition:  all 0.2s ease-in-out;
     text-transform: uppercase;
     font-family: $helvetica-regular;
     &:hover{
         background-color: transparent;
         background-image: none;
         color:#573FEA;
-        // transition: 1s all ease-in-out;
         border: 0.1rem solid #573FEA;
-        // // color: linear-gradient(to right, #573FEA , #A191FF);
-        // background: -webkit-linear-gradient( #573FEA , #A191FF);
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
     }
 }
 .btn-arrow{
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
+    .arrow_blue{
+        display: none;
+    }
+    &:hover{
+        .arrow_white{
+            display: none;
+        }
+        .arrow_blue{
+            display: block;
+        }
+    }
+
 }
